@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>박스모델 연습</title>
+    <style>
+        .item {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            border: 3px solid black;
+            /* padding: 30px; */
+            box-sizing: border-box;
+           
+        }
+        .wrapper {
+            width: 1000px;
+            height: 1000px;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           align-items: center;
+        }
+        .qqq {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="qqq">box111</div>
+    <div class="wrapper">
+        <div class="item">box</div>
+        <div class="item">box</div>
+        <div class="item">box</div>
+    </div>
+    <div class="qqq">box222</div>
+</body>
+</html>

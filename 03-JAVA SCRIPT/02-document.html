@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>돔(DOM) 조작하기(HTML과 JAVASCRIPT 연결)</title> <!--DOM=document object model-->
+    <script>
+        function ccc(){
+           // alert("안녕 안녕 안녕하세요~~")
+           document.getElementById("qqq").innerText="반갑 반갑 반갑습니다~~"
+
+        }
+        function counter(){
+            const temp = Number(document.getElementById("count").innerText) + 1
+            document.getElementById("count").innerText = temp
+        }
+        function changeColor(){
+            document.getElementById("ccc").setAttribute("style", "background-color: yellow")  //setAttribute 속성바꾸기 (따옴표 붙여야함)
+        }
+        function setDisabled(){
+            document.getElementById("ddd").setAttribute("disabled", "true")  // disabled  비활성화 시키기
+        }
+    </script>
+</head>
+<body>
+    <div id="qqq">안녕하세요</div>
+    <button onclick="ccc()">click!!</button>
+
+    <div id="count">0</div>
+    <button onclick="counter()">숫자 홀리고~!</button>
+
+    <button id="ccc" onclick="changeColor()">색깔바꾸기</button>
+    <button id="ddd" onclick="setDisabled()">비활성화시키기</button>
+</body>
+</html> 
